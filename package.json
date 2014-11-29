@@ -1,0 +1,39 @@
+{
+  "name": "toni"
+  , "version": "0.1.0"
+  , "description": "Toni, a simple and efficient bitmap implementation for integer sets, using bitwise operations and a Buffer. Modifying a single bit instead of an entire byte, obviously saves 87.5% of Buffer space, with low performance loss."
+  , "homepage": "https://github.com/rootslab/toni"
+  , "private": false
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/rootslab/toni.git"
+  }
+  , "keywords": [
+    "toni"
+    , "bitmap"
+    , "bitset"
+    ," lookup table"
+    , "util"
+  ]
+  , "author": {
+    "name": "Guglielmo Ferri"
+    , "email": "44gatti@gmail.com"
+  }
+  , "dependencies": {
+     "bolgia" : ">=2.7.4"
+  },
+  "devDependencies": {
+  }
+  , "main": "index"
+  , "engines": {
+    "node": ">=0.10.x"
+  }
+  , "scripts": {
+    "test": "node test/run.js"
+  }
+  , "license": "MIT"
+  , "readmeFilename": "Readme.md"
+  , "bugs": {
+    "url": "https://github.com/rootslab/toni/issues"
+  }
+}
