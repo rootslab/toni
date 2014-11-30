@@ -80,15 +80,17 @@ exports.test= function ( done, assertions ) {
     log( '- manually fill entire Buffer with %d\'s', 0x01 );
     toni.btable.fill( 0x01 );
 
+    log( '- manually set items to %d', n );
+    toni.items = n;
+
     log( '- now #clear() bitmap' );
     toni.clear();
 
     log( '- bitmap should be empty' );
     for ( i = 0; i < toni.btable.length; i++ ) assert.equal( toni.btable[ i ], 0x00, 'Something goes wrong with clear function!' );
 
-
-    assert.equal( toni.items, 0, 'wrong value for item counter!' );
-
+    log( '- check item property, should be %d', 0 );
+    assert.equal( toni.items, 0, 'Something goes wrong with clear function, wrong value for item counter!!' );
 
     exit();
 };

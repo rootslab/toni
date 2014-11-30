@@ -91,8 +91,8 @@ Toni#clear : function () : Toni
 
 /*
  * Add an integer value to the set and test item/value presence in the set.
- * When the value is out of range, or if the element is already in the
- * set, the operation fails and it returns -1.
+ * When the value is out of range, or if the element is already present, the
+ * operation fails and it returns -1.
  *
  */
 Toni#add : function ( Number value ) : Number
