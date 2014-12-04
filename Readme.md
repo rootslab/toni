@@ -36,10 +36,16 @@ var Toni  = require( 'toni' );
 
 ###Run Tests
 
+> install devDependencies :
+
 ```bash
-$ cd toni/
-$ npm test
+ $ cd toni/
+ # to update devDependencies, use 'npm update --dev'
+ $ npm install --dev
+ # run tests
+ $ npm test
 ```
+
 ###Run Benchmarks
 
 > run benchmarks for __Toni__.
