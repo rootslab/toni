@@ -1,7 +1,8 @@
 /*
  * Toni fill, re-fill, delete, stress.. test.
  */
-exports.test= function ( done, assertions ) {
+
+exports.test  = function ( done, assertions ) {
     var log = console.log
         , exit = typeof done === 'function' ? done : function () {}
         , assert = assertions || require( 'assert' )
