@@ -19,11 +19,12 @@
 
 [![NPM GRAPH2](https://nodei.co/npm/toni.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/toni/)
 
-> __Toni__, a simple and efficient bitmap implementation for (__32 bits__) positive integer sets,
+> __Toni__, a simple and efficient bitmap implementation for positive integer sets (max 32 bits),
 > with no element repetition, using bitwise operations and a Buffer.
-> Modifying a single bit instead of an entire byte, obviously saves __87.5%__ of Buffer space,
-> but it also implies a gain greater than 200% in performances, for accessing values, when it was
-> used with big integer ranges.
+
+> Modifying a single bit instead of an entire byte, to signal item presence in the current set,
+> obviously saves __87.5%__ of Buffer space, but it also implies a gain greater than __200%__ in
+> performances, for accessing values, when it was used with big integer ranges.
 
 > See [BitArray](http://en.wikipedia.org/wiki/Bit_array).
 
