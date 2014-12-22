@@ -63,35 +63,26 @@ $ npm run bench
 
 ###Constructor
 
+> minimun range is 1 item/bit, max is 2^32 (from 1 to 4 bytes).
+
 ```javascript
-Toni( [ Object opt ] )
+Toni( Number range )
 // or
-new Toni( [ Object opt ] )
-```
-
-####Options
-
-> Default options are listed.
-
-```javascript
-opt = {
-    // minimun range is 8 items/bits (1 byte), max is 2^32 (4 bytes)
-    range : 8
-}
+new Toni( Number range )
 ```
 
 ###Properties
 
 ```javascript
  /*
-  * Instance configuration object.
-  */
- Toni.options : Object
-
- /*
   * the bitmap buffer.
   */
- Toni.btable : Buffer
+ Toni.bitmap : Buffer
+
+ /*
+  * max range for values (from 0 to range - 1).
+  */
+ Toni.range : Number
 
  /*
   * current items in the set.
@@ -101,7 +92,8 @@ opt = {
 /*
   * a shortcut for the bitmap buffer length.
   */
- Toni.btlen : Number
+ Toni.bmlen : Number
+
 ```
 
 ###Methods
