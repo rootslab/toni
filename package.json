@@ -1,6 +1,6 @@
 {
   "name": "toni"
-  , "version": "0.5.0"
+  , "version": "0.5.1"
   , "description": "Toni, a simple and efficient bitmap implementation for positive integer sets (max 32 bits), with no element repetition, using bitwise operations and a Buffer. Modifying a single bit instead of an entire byte, obviously saves 87.5% of Buffer space, but it also implies a gain greater than 200% in performances, for accessing values, when it was used with big integer ranges."
   , "homepage": "https://github.com/rootslab/toni"
   , "private": false

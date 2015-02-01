@@ -1,23 +1,23 @@
 ### Toni
 
-[![NPM VERSION](http://img.shields.io/npm/v/toni.svg)](https://www.npmjs.org/package/toni)
-[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg)](https://www.codacy.com/public/44gatti/toni)
-[![CODECLIMATE-TEST-COVERAGE](https://codeclimate.com/github/rootslab/toni/badges/coverage.svg)](https://codeclimate.com/github/rootslab/toni)
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/toni#mit-license)
+[![NPM VERSION](http://img.shields.io/npm/v/toni.svg?style=flat)](https://www.npmjs.org/package/toni)
+[![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/toni)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/toni.svg?style=flat)](https://codeclimate.com/github/rootslab/toni)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/toni.svg?style=flat)](https://codeclimate.com/github/rootslab/toni)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/toni#mit-license)
 
-[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/toni.svg)](http://travis-ci.org/rootslab/toni)
-[![BUILD STATUS](http://img.shields.io/david/rootslab/toni.svg)](https://david-dm.org/rootslab/toni)
-[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/toni.svg)](https://david-dm.org/rootslab/toni#info=devDependencies)
-
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/toni)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/toni)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/toni)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/toni.svg)](http://npm-stat.com/charts.html?package=toni)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/toni.svg?style=flat)](http://travis-ci.org/rootslab/toni)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/toni.svg?style=flat)](https://david-dm.org/rootslab/toni)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/toni.svg?style=flat)](https://david-dm.org/rootslab/toni#info=devDependencies)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/toni.svg?style=flat)](http://npm-stat.com/charts.html?package=toni)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/toni.png)](https://nodei.co/npm/toni/)
 
 [![NPM GRAPH2](https://nodei.co/npm/toni.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/toni/)
+
+[![status](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/toni)
+[![views](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/toni)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/toni)
 
 > __Toni__, a simple and efficient bitmap implementation for positive integer sets (max 32 bits),
 > with no element repetition, using bitwise operations and a Buffer.
@@ -107,6 +107,14 @@ new Toni( Number range )
 Toni#clear : function () : Toni
 
 /*
+ * Check for item presence in the set.
+ * It returns a positive number if item is present, 0 otherwise.
+ * When the value is out of range, or if the element is already present, the
+ * operation fails and it returns -1.
+ */
+Toni#chk : function ( Number value ) : Number
+
+/*
  * Add an integer value to the set and test item/value presence in the set.
  * When the value is out of range, or if the element is already present, the
  * operation fails and it returns -1.
@@ -124,7 +132,7 @@ Toni#del : function ( Number value ) : Number
 
 ### MIT License
 
-> Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
