@@ -25,21 +25,21 @@ exports.test  = function ( done, assertions ) {
 
     log( '- check for items presence..' );
 
-    assert.ok( toni.get( 1 ) );
-    assert.ok( toni.get( 23 ) );
-    assert.ok( toni.get( 34 ) );
-    assert.ok( toni.get( 13 ) );
-    assert.ok( toni.get( 0 ) );
-    assert.ok( toni.get( 85 ) );
+    assert.ok( toni.chk( 1 ) );
+    assert.ok( toni.chk( 23 ) );
+    assert.ok( toni.chk( 34 ) );
+    assert.ok( toni.chk( 13 ) );
+    assert.ok( toni.chk( 0 ) );
+    assert.ok( toni.chk( 85 ) );
 
     log( '- check for items out of range..' );
 
-    assert.ok( toni.get( 564 ) === -1 );
+    assert.ok( toni.chk( 564 ) === 0 );
 
     log( '- check for negative items..' );
 
-    assert.ok( toni.get( -1 ) === toni.get( 1 ) );
-    assert.ok( toni.get( -2 ) === toni.get( 2 ) );
+    assert.ok( toni.chk( -1 ) === toni.chk( 1 ) );
+    assert.ok( toni.chk( -2 ) === toni.chk( 2 ) );
 
     exit();
 };

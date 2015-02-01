@@ -109,8 +109,6 @@ Toni#clear : function () : Toni
 /*
  * Check for item presence in the set.
  * It returns a positive number if item is present, 0 otherwise.
- * When the value is out of range, or if the element is already present, the
- * operation fails and it returns -1.
  */
 Toni#chk : function ( Number value ) : Number
 
