@@ -25,12 +25,12 @@ exports.test  = function ( done, assertions ) {
 
     log( '- check for items presence..' );
 
-    assert.ok( toni.chk( 1 ) );
-    assert.ok( toni.chk( 23 ) );
-    assert.ok( toni.chk( 34 ) );
-    assert.ok( toni.chk( 13 ) );
-    assert.ok( toni.chk( 0 ) );
-    assert.ok( toni.chk( 85 ) );
+    assert.ok( toni.chk( 1 ) === 1 );
+    assert.ok( toni.chk( 23 ) === 1 );
+    assert.ok( toni.chk( 34 ) === 1 );
+    assert.ok( toni.chk( 13 ) === 1 );
+    assert.ok( toni.chk( 0 ) === 1 );
+    assert.ok( toni.chk( 85 ) === 1 );
 
     log( '- check for items out of range..' );
 
