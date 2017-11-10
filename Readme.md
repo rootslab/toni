@@ -2,22 +2,19 @@
 
 [![NPM VERSION](http://img.shields.io/npm/v/toni.svg?style=flat)](https://www.npmjs.org/package/toni)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/toni)
-[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/toni.svg?style=flat)](https://codeclimate.com/github/rootslab/toni)
 [![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/toni.svg?style=flat)](https://codeclimate.com/github/rootslab/toni)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/toni#mit-license)
 
+![NODE VERSION](https://img.shields.io/node/v/toni.svg)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/toni.svg?style=flat)](http://travis-ci.org/rootslab/toni)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/toni.svg?style=flat)](https://david-dm.org/rootslab/toni)
 [![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/toni.svg?style=flat)](https://david-dm.org/rootslab/toni#info=devDependencies)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/toni.svg?style=flat)](http://npm-stat.com/charts.html?package=toni)
 
-[![NPM GRAPH1](https://nodei.co/npm-dl/toni.png)](https://nodei.co/npm/toni/)
+[![NPM MONTHLY](http://img.shields.io/npm/dm/toni.svg?style=flat)](http://npm-stat.com/charts.html?package=toni)
+![NPM YEARLY](https://img.shields.io/npm/dy/toni.svg)
 
-[![NPM GRAPH2](https://nodei.co/npm/toni.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/toni/)
+[![NPM GRAPH](https://nodei.co/npm/toni.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/toni/)
 
-[![status](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.badges/status.png)](https://sourcegraph.com/github.com/rootslab/toni)
-[![views](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views.png)](https://sourcegraph.com/github.com/rootslab/toni)
-[![views 24h](https://sourcegraph.com/api/repos/github.com/rootslab/toni/.counters/views-24h.png)](https://sourcegraph.com/github.com/rootslab/toni)
 
 > __Toni__, a simple and efficient bitmap implementation for positive integer sets (max 32 bits),
 > with no element repetition, using bitwise operations and a Buffer.
@@ -28,7 +25,7 @@
 
 > See [BitArray](http://en.wikipedia.org/wiki/Bit_array).
 
-###Install
+### Install
 
 ```bash
 $ npm install toni [-g]
@@ -40,7 +37,7 @@ $ npm install toni [-g]
 var Toni  = require( 'toni' );
 ```
 
-###Run Tests
+### Run Tests
 
 > install devDependencies :
 
@@ -52,7 +49,7 @@ var Toni  = require( 'toni' );
  $ npm test
 ```
 
-###Run Benchmarks
+### Run Benchmarks
 
 > run benchmarks for __Toni__.
 
@@ -61,7 +58,7 @@ $ cd toni/
 $ npm run bench
 ```
 
-###Constructor
+### Constructor
 
 > minimun range is 1 item/bit, max is 2^32 (from 1 to 4 bytes).
 
@@ -71,7 +68,7 @@ Toni( Number range )
 new Toni( Number range )
 ```
 
-###Properties
+### Properties
 
 ```javascript
  /*
@@ -96,7 +93,7 @@ new Toni( Number range )
 
 ```
 
-###Methods
+### Methods
 
 > Arguments within [ ] are optional.
 
@@ -130,7 +127,7 @@ Toni#del : function ( Number value ) : Number
 
 ### MIT License
 
-> Copyright (c) 2015 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
+> Copyright (c) 2015-present &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
