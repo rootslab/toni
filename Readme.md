@@ -122,6 +122,11 @@ Toni#add : function ( Number value ) : Number
  * the operation fails and it returns -1.
  */
 Toni#del : function ( Number value ) : Number
+
+/*
+ * Tt returns the occurrences of bit 1 until index i
+ */
+Toni#rank : function ( Number index ) : Number
 ```
 
 ### MIT License
