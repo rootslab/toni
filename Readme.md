@@ -124,7 +124,9 @@ Toni#add : function ( Number value ) : Number
 Toni#del : function ( Number value ) : Number
 
 /*
- * Tt returns the occurrences of bit 1 until index i
+ * It returns the occurrences of bit 1 until index i, then the total
+ * number of 0s = index - rank( index ), if index is into the current
+ * range, otherwise it returns -1
  */
 Toni#rank : function ( Number index ) : Number
 ```
