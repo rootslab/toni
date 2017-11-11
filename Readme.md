@@ -20,8 +20,7 @@
 > with no element repetition, using bitwise operations and a Buffer.
 
 > Modifying a single bit instead of an entire byte, to signal item presence in the current set,
-> obviously saves __87.5%__ of Buffer space, but it also implies a gain greater than __200%__ in
-> performances, for accessing values, when it was used with big integer ranges.
+> obviously saves __87.5%__ of Buffer space.
 
 > See [BitArray](http://en.wikipedia.org/wiki/Bit_array).
 
