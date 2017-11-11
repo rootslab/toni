@@ -6,9 +6,7 @@ var log = console.log
     , Toni = require( '../' )
     , p = 24
     , k = Math.pow( 2, p )
-    , toni = Toni( {
-        range : k
-    } )
+    , toni = Toni( k )
     , buf = new Buffer( p )
     , print = function ( ms, n ) {
         var avg = 1000 * n / ms;
