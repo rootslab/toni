@@ -33,7 +33,7 @@ $ npm install toni [-g]
 > __require__:
 
 ```javascript
-var Toni  = require( 'toni' );
+var Toni = require( 'toni' );
 ```
 
 ### Run Tests
